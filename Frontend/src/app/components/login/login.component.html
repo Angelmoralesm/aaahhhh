@@ -1,0 +1,29 @@
+<section>
+  <div class="me-xxl-3 pt-5 px-5 pt-xxl-5 px-xxl-5 text-center overflow-hidden">
+      <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-8 d-block">
+            <form class="bg-dark  rounded-5 shadow-5-strong p-5" [formGroup]="formLogin" (submit)="mostrar()">
+              <div>
+              <h1  class="display-6" id="titulos">Inicio de sesión</h1>
+              </div>
+              <br>
+              <div class="form-outline mb-4">
+                <label for="username">Nombre de usuario</label>
+                <br>
+                <input type="text" id="username" formControlName="username"/>
+              </div>
+              <br>
+              <div class="form-outline mb-4">
+                <label for="password">Contraseña</label>
+                <br>
+                <input type="password" id="password" formControlName="password"/>
+              </div>
+              <br>
+              <!--<a class="nav-link" routerLink="../profile">-->
+                <br>
+                <input class="btn btn-danger me-lg-2" type="submit" value="Iniciar sesión" id="login" [disabled]="formLogin.invalid"/>
+            </form>
+          </div>
+        </div>
+  </div>
+</section>

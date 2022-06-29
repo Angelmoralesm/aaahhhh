@@ -1,0 +1,42 @@
+@import "variables";
+@import "botones";
+$colorRojo: red;
+
+section{
+    background: {
+        image: url('../imagenes/rockbg.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    font-family: $bigfont;
+}
+
+hr{
+    border-color: $colorRojo;
+    height: 10px;
+    background-color: $colorRojo;
+}
+
+#titulo{ 
+    li{
+        padding: 20px;
+    }
+}
+
+
+form{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+span{
+    color: white;
+}
+
+.boton_submit{
+    background-color: red;
+    border-radius: 30px;
+    font-size: 1em;
+}
